@@ -42,6 +42,19 @@ public class PrimitiveTypes {
         int million2 = 1_000_000;
         int million3 = 1000_000;
 
+        /*
+         *  Cannot assign null to primitive types!!!!
+         * */
+//        int i = null;
+//        double d = null;
+//        boolean b = null;
+
+        //Reference type can be assign null tough
+        String s = null;
+        Double d = null;
+        Boolean b = null;
+        Integer i = null;
+
 
 
     }

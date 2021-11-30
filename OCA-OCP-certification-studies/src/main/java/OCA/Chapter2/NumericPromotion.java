@@ -44,6 +44,10 @@ public class NumericPromotion {
         System.out.println(z5.getClass());
 
 
+        short s1 = 10;
+        short s2 = 3;
+//        short s3 = s2 * s1; DOES NOT COMPILE because short is promoted to Integer
+        short s3 = (short) (s2 * s1); // OK
     }
 
 }

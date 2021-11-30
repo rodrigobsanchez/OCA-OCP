@@ -24,6 +24,11 @@ public class ForStatements {
     * break; this statement transfers the flow of control out to the enclosing statement. It will end the loop earlier.
     * */
 
+    /*
+    * continue; Statement that causes the flow to finish the current loop.
+    *           It will force a next iteration, will evaluate the loop boolean expression again.
+    * */
+
 
     public static void main(String[] args) {
         for(int i = 0; i < 10; i++){
@@ -69,6 +74,16 @@ public class ForStatements {
            NODE_LOOP:  for(int z = 10; z > 0; z--){
                 System.out.println("Yahoo Node");
                 break NODE_LOOP;
+            }
+            System.out.println("Yahoo Parent");
+            break PARENT_LOOP;
+        }
+
+
+        PARENT_LOOP: for(int i = 0; i < 10; i++){
+            NODE_LOOP:  for(int z = 10; z > 0; z--){
+                System.out.println("Yahoo Node");
+                continue NODE_LOOP;
             }
             System.out.println("Yahoo Parent");
             break PARENT_LOOP;

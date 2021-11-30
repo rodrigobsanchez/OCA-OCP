@@ -15,7 +15,7 @@ public class DeclareVariables {
    // int i6; i7;0  //DOES NOT COMPILE
 
     /*
-    * Only works when they sare the same type;
+    * Only works when they share the same type;
     * */
     // int value , String val; //WRONG
 
